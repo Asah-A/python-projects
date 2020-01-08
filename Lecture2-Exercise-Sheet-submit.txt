@@ -1,0 +1,158 @@
+#  Script Name : average_ages.py
+#  Author:<Asah Asikin 119416836>
+
+
+
+Q7.
+(base) Asahs-MacBook-Pro:CS1117Lab1_lecture2 asahsarker$ source /anaconda3/bin/activate
+(base) Asahs-MacBook-Pro:CS1117Lab1_lecture2 asahsarker$ conda activate base
+(base) Asahs-MacBook-Pro:CS1117Lab1_lecture2 asahsarker$ //anaconda3/bin/python "/Users/asahsarker/Google Drive/Computer_Science/Year_1/Semester_1/intro_programming_/Assignments/CS1117Lab1_lecture2/average_ages.py"
+Please enter age 1: 2
+Please enter age 2: 4
+The average age is 3
+
+
+
+(base) Asahs-MacBook-Pro:CS1117Lab1_lecture2 asahsarker$ python average_ages.py 
+Please enter age 1: 2
+Please enter age 2: 4
+The average age is 3
+(base) Asahs-MacBook-Pro:CS1117Lab1_lecture2 asahsarker$ 
+
+
+
+
+
+
+Q9
+Error 1
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/average_ages.py
+Please enter age 1: 2
+Please enter age 2: 4
+Traceback (most recent call last):
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/average_ages.py", line 14, in <module>
+    average = (age1+age2)/2
+NameError: name 'age1' is not defined
+
+Process finished with exit code 1
+
+Error 2
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/average_ages.py
+Please enter age 1: 2
+Please enter age 2: 4
+Traceback (most recent call last):
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/average_ages.py", line 16, in <module>
+    print("The average age is %d" % average)
+NameError: name 'average' is not defined
+
+
+
+
+
+
+Q10
+#  Script Name : what_is_my_name.py
+#  Author:<Asah Asikin 119416836>
+
+# Figure out how to get the value from the user input
+# Figure out how many variables we need to store the data from user input
+# Find meaningful names for the variables
+# use the appropriate python syntax to get the string(first_name, second_name) input  value from user
+# give user understandable text to insert their first and second name
+# get the user input value and store in the preferable variable
+# show the output to the user using the print() function)
+
+first_name = input("Please enter your first name:")
+second_name = input("Please enter your second name:")
+
+print("Hello" + " " + first_name + " " + second_name)
+
+
+Output of what is my name.py
+/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bin/python /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/what_is_my_name.py
+Please enter your first name: Asah
+Please enter your second name:Asikin
+Hello  Asah Asikin
+
+
+Q12
+Bug 1 Yes
+There are no double brackets (parentheses) on the print functions.
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py", line 6
+    print number
+               ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(number)?
+
+Correct Code Output
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+99
+red balloons
+
+
+
+
+Bug 2 Yes
+We declared the variable, gave the assignment operator but didn't assign a value to the variable.
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py", line 6
+    number =
+           ^
+SyntaxError: invalid syntax
+
+Correct Code Output
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+78
+
+Process finished with exit code 0
+
+
+Bug 3 Yes
+Class is a reserved keyword so we cannot use it as a variable.
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py", line 5
+    class = 4;
+          ^
+SyntaxError: invalid syntax
+
+Correct Code Output
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+4
+
+Bug 4 Yes
+The variable is assigned a number but we are trying to print the type of 'num' which is not declared.
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py", line 6
+    print ( type(num) )
+    ^
+IndentationError: unexpected indent
+
+Correct Code Output
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py", line 6
+    print ( type(num) )
+    ^
+IndentationError: unexpected indent
+
+
+Correct Code Output
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+55
+
+
+
+Bug 5 No Bugs
+The variable can be named with an underscore BUT it's bad naming practice.
+
+Correct Code Output
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture2/venv/bugs.py
+0
+
+
+
+
+

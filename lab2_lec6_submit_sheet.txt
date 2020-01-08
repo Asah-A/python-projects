@@ -1,0 +1,124 @@
+# Asah Asikin
+# 119416836
+
+Q1.
+def seperated_input(string1, string2, my_sep, my_end):
+    print(string1.capitalize(), string2.capitalize(), sep=my_sep, end=my_end)
+
+seperated_input("phineas", "ferb", " and ", " rock!!!\n")
+seperated_input("doofenshmirtz", "incorporated", " Evil ", "!!!\n")
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/funcs.py
+Phineas and Ferb rock!!!
+Doofenshmirtz Evil Incorporated!!!
+
+Q2.
+# Asah Asikin
+# 119416836
+
+def seperated_input(string1, string2, my_sep, my_end):
+    print(string1.capitalize(), string2.capitalize(), sep=my_sep, end=my_end)
+
+seperated_input("phineas", "ferb", " and ", " rock!!!\n")
+seperated_input("doofenshmirtz", "incorporated", " Evil ", "!!!\n")
+print("The value of __name__ is:", repr(__name__))
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/funcs.py
+Phineas and Ferb rock!!!
+Doofenshmirtz Evil Incorporated!!!
+The value of __name__ is: '__main__'
+
+
+ Q1 .ERRORS
+1.# Needs to be modified: You don't need to use my_sep and my_end when calling the function as they are already in the print statement
+seperated_input("A", "B", my_sep=" and ", my_end=" and C\n")
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+A and B and C
+
+2.# Needs to be modified: You don't need to use my_sep and my_end when calling the function as they are already in the print statement. Also the end is in the wrong position.
+seperated_input("A", "B", my_end=" and C\n", my_sep=" and ")
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+A and B and C
+
+3.# Not valid as strings "A" and "B" are in the wrong places
+seperated_input("A", my_end=" and C\n", my_sep=" and ", "B")
+
+OUTPUT ERROR
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+  File "/Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py", line 6
+    seperated_input("A", my_end=" and C\n", my_sep=" and ", "B")
+                                                           ^
+SyntaxError: positional argument follows keyword argument
+
+CORRECT OUTPUT
+seperated_input("A", "B", " and ", " and C\n")
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+A and B and C
+
+4.# Needs to be modified as there is no value for my_end parameter
+seperated_input("A", "B", my_sep=" and ")
+
+CORRECT OUTPUT
+
+seperated_input("A", "B", " and ", " and C\n ")
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+A and B and C
+
+5.# Value for my_sep is missing
+seperated_input("A", "B", my_end=" and C\n")
+
+CORRECT OUTPUT
+
+seperated_input("A", "B", " and ", " and C\n ")
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+A and B and C
+
+6.# There are two "C" values but not enough parameters
+seperated_input("A", "B", "C", my_sep=" and ", my_end=" and C\n")
+
+CORRECT OUTPUT
+seperated_input("A", "B", my_sep=" and ", my_end=" and C\n")
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+A and B and C
+
+7.# Code is fine but dont need to use my_sep and my_end again as already in parameters
+seperated_input("8", "7", my_sep=" + ", my_end=" = 15\n")
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+8 + 7 = 15
+
+8.# There are no double quotation marks around +.
+seperated_input(8, 7, my_sep= +, my_end=" = 15\n")
+
+CORRECT OUTPUT
+seperated_input(8, 7, my_sep= " + ", my_end=" = 15\n")\
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+8 + 7 = 15
+
+9.# The numbers have to be string values not int values.
+seperated_input(8, 7, my_sep=" + ", my_end=15)
+
+CORRECT OUTPUT
+
+seperated_input(" 8 "," 7 ", my_sep=" + ", my_end=" = 15 ")
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+ 8  +  7 = 15
+
+10.# Numbers are not strings and the plus should be enclosed within double quotations. There are double quotations in the wrong place.
+ seperated_input(8, 7, my_sep=" + ", my_end=" = 15"+"\n")
+
+ CORRECT OUTPUT
+seperated_input(" 8 "," 7 ", my_sep=" + ", my_end=" = 15\n ")
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117_Lab2_lec6/Functions/bugs.py
+ 8  +  7 = 15

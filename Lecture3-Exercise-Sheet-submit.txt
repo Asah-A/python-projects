@@ -1,0 +1,110 @@
+#  Lecture 3 Submit Sheet
+#  Author:<Asah Asikin 119416836>
+
+Q3
+String
+spiderman = "web making"
+print(type(spiderman))
+
+CODE OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/Desktop/PycharmProjects/CS1117Lab1_lecture3/what_is_my_type.py
+<class 'str'>
+
+Integer
+spiderman = 6
+print(type(spiderman))
+
+CODE OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/Desktop/PycharmProjects/CS1117Lab1_lecture3/what_is_my_type.py
+<class 'int'>
+
+Tuple 
+spiderman = ('physics', 'chemistry', 1997, 2000)
+print(type(spiderman))
+
+/usr/local/bin/python3.7 /Users/asahsarker/Desktop/PycharmProjects/CS1117Lab1_lecture3/what_is_my_type.py
+<class 'tuple'>
+
+Float
+spiderman = 0.05
+print(type(spiderman))
+
+/usr/local/bin/python3.7 /Users/asahsarker/Desktop/PycharmProjects/CS1117Lab1_lecture3/what_is_my_type.py
+<class 'float'>
+
+
+CamelCase means that my words are joined together but the beginning letter of the joint new word is capitalised. It can be used to name variables. Ex. iPhone
+Pascalcase means that the first letter in the word is capital. It is used for class names
+
+1. Assert is a reserved key word
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py", line 5
+    assert = "compliant"
+           ^
+SyntaxError: invalid syntax
+
+assert_1 = "compliant"
+print(assert_1)
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py
+compliant
+
+2. del is a reserved keyword so it cannot be used.
+
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py", line 5
+    del = 'delete'
+        ^
+SyntaxError: invalid syntax
+
+del_1 = 'delete'
+print(del_1)
+
+OUPUT 
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py
+delete
+
+3. Tuple has no bugs in the code
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py
+('am', 'I', 'a', 'tuple')
+
+4. You can't start a variable with a number.
+
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py", line 5
+    7_days_a_week = "I code"
+     ^
+SyntaxError: invalid token
+
+seven_days_a_week = "I code"
+print(seven_days_a_week)
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py
+I code
+
+
+5. howfartothenextfoodshop has no bugs but it is a very poorly named variable.
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py
+2 minutes’ walk
+
+
+6. mixture#5 has been commented out by the # symbol and so cannot be run.
+
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py
+  File "/Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py", line 7
+    
+                    ^
+SyntaxError: unexpected EOF while parsing
+
+
+mixture_5 = "soup"
+print(mixture_5)
+
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/PycharmProjects/CS1117Lab1_lecture3/bugs.py
+soup

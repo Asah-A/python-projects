@@ -1,0 +1,148 @@
+
+
+#  Script Name : what_is_my_type.py
+#  Author:<Asah Asikin 119416836>
+
+spiderman = 0.05
+print(type(spiderman))
+
+
+def string_function(argument1):
+    """Summary or Description of the Function
+
+    Parameters:
+    argument1 (int): Description of arg1
+
+    Returns:
+    int:Returning value
+
+   """
+
+    return argument1
+
+print(string_function.__doc__)
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/Desktop/CS1117Lab1_lecture3/what_is_my_type.py
+<class 'float'>
+Summary or Description of the Function
+
+    Parameters:
+    argument1 (int): Description of arg1
+
+    Returns:
+    int:Returning value
+
+
+
+
+
+
+
+
+
+Q.5
+
+
+
+
+#  Script Name : what_is_my_name.py
+#  Author:<Asah Asikin 119416836>
+
+# Figure out how to get the value from the user input
+# Figure out how many variables we need to store the data from user input
+# Find meaningful names for the variables
+# use the appropriate python syntax to get the string(first_name, second_name) input  value from user
+# give user understandable text to insert their first and second name
+# get the user input value and store in the preferable variable
+# show the output to the user using the print() function)
+
+first_name = input("Please enter your first name:")
+second_name = input("Please enter your second name:")
+
+print("Hello" + " " + first_name + " " + second_name)
+
+def createLowerCaseAndUppercase():
+
+    userInput = input('Enter your text please')
+    result =  userInput.lower()
+    return  result.title()
+
+print(createLowerCaseAndUppercase())
+
+
+OUTPUT
+/usr/local/bin/python3.7 /Users/asahsarker/Desktop/CS1117Lab1_lecture2/what_is_my_name.py
+Please enter your first name:asah
+Please enter your second name:asikin
+Hello asah asikin
+Enter your text please asah asikin
+ Asah Asikin
+
+
+# Error Checking
+
+A. ''' I'm a comment
+    - missing closing triple quotes
+B. ''' I'm a comment '''
+    - no bugs in the code(using single quotation)
+C. """ I'm a comment """
+    - no bugs in the code(using double quotation)
+D. age = 7 # I'm a comment
+    - no bugs in the code(comment is allow end of the line)
+
+E.
+    1.
+
+    def a_function:
+    return a_parameter
+
+    - Yes bugs in the code
+    - missing parentheses
+    - function declaration isn't correct also we are returning the parameter without passing to the function
+
+
+
+    Solution: def a_function(a_parameter):
+    return a_parameter
+    print(a_function('Asah'));
+
+    Output: Asah
+
+    - we define a function and give a name called a_function
+    - passing a parameter name a_parameter
+    - returning a parameter name a_parameter
+    - we are calling the function at the end which return a value what we are passing while calling the function in our case a string 'Asah
+
+2.  def a_function()
+        return "a_parameter"
+
+        - Yes bugs in the code
+        - missing colon ':' after the parentheses
+
+Solution:
+
+    def a_function():
+    return "a_parameter"
+
+    print(a_function())
+
+3. def a_function(a_parameter) :
+    return a_parameter
+
+    - No bugs in the code
+    - but white space after parentheses which is bad practic
+
+4. def a_function(a_parameter a_second_parameter):
+    return a_parameter
+    print(a_second_parameter)
+
+    - Yes bugs in the code
+    - missing coma between two passing perameter
+    - also we are passing a parameter while printing whithout passing the value
+
+Solution:
+    def a_function(a_parameter, a_second_parameter):
+    return a_parameter
+    print('a_second_parameter')
+
